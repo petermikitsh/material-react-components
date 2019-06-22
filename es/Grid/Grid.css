@@ -1,0 +1,75 @@
+/*  imported from Grid.css  */
+
+.Grid-root {
+  width: 100%;
+}
+
+.Grid-margin-0 {
+  margin: 0;
+}
+
+.Grid-margin-8 {
+  margin: auto 8px;
+  max-width: calc(100% - 16px);
+}
+
+.Grid-margin-16 {
+  margin: auto 16px;
+  max-width: calc(100% - 32px);
+}
+
+.Grid-margin-24 {
+  margin: auto 24px;
+  max-width: calc(100% - 48px);
+}
+
+.Grid-margin-40 {
+  margin: auto 40px;
+  max-width: calc(100% - 80px);
+}
+
+.Grid-gutter {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+}
+
+.Grid-gutter-8 {
+  width: calc(100% + 8px);
+  margin: auto -4px;
+}
+
+.Grid-gutter-8 > .Grid-gutterChild {
+  padding: 4px;
+}
+
+.Grid-gutter-16 {
+  width: calc(100% + 16px);
+  margin: auto -8px;
+}
+
+.Grid-gutter-16 > .Grid-gutterChild {
+  padding: 8px;
+}
+
+.Grid-gutter-24 {
+  width: calc(100% + 24px);
+  margin: auto -12px;
+}
+
+.Grid-gutter-24 > .Grid-gutterChild {
+  padding: 12px;
+}
+
+.Grid-gutter-40 {
+  width: calc(100% + 40px);
+  margin: auto -20px;
+}
+
+.Grid-gutter-40 > .Grid-gutterChild {
+  padding: 20px;
+}

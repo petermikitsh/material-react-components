@@ -1,0 +1,16 @@
+/*  imported from SvgIcon.css  */
+
+.SvgIcon-root {
+  padding: 0;
+  height: 48px;
+  width: 48px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: none;
+  border: none;
+  outline: none;
+  position: relative;
+  min-width: 0;
+}

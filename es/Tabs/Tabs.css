@@ -1,0 +1,33 @@
+/*  imported from Tabs.css  */
+
+.Tabs-tabs {
+  overflow: hidden;
+  white-space: nowrap;
+  width: 100%;
+}
+
+.Tabs-tabsInner {
+  overflow-x: scroll;
+  overflow-y: hidden;
+  padding: 0;
+}
+
+.Tabs-tabList {
+  margin: 0;
+  padding: 0;
+}
+
+.Tabs-tabListFixed {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.Tabs-indicator {
+  -webkit-transition: all 250ms ease;
+  -o-transition: all 250ms ease;
+  transition: all 250ms ease;
+  height: 2px;
+  margin-top: -2px;
+}

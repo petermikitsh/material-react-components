@@ -1,0 +1,21 @@
+/*  imported from TextFieldAnimations.css  */
+
+@-webkit-keyframes TextFieldAnimations-sink {
+  0% { -webkit-transform: scale(.75) translate(0,-25px); transform: scale(.75) translate(0,-25px); }
+  100% { -webkit-transform: scale(1) translate(0, 0); transform: scale(1) translate(0, 0); }
+}
+
+@keyframes TextFieldAnimations-sink {
+  0% { -webkit-transform: scale(.75) translate(0,-25px); transform: scale(.75) translate(0,-25px); }
+  100% { -webkit-transform: scale(1) translate(0, 0); transform: scale(1) translate(0, 0); }
+}
+
+@-webkit-keyframes TextFieldAnimations-float {
+  0% { -webkit-transform: scale(1) translate(0, 0); transform: scale(1) translate(0, 0); }
+  100% { -webkit-transform: scale(.75) translate(0,-25px); transform: scale(.75) translate(0,-25px); }
+}
+
+@keyframes TextFieldAnimations-float {
+  0% { -webkit-transform: scale(1) translate(0, 0); transform: scale(1) translate(0, 0); }
+  100% { -webkit-transform: scale(.75) translate(0,-25px); transform: scale(.75) translate(0,-25px); }
+}

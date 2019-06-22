@@ -1,0 +1,12 @@
+/*  imported from Table.css  */
+
+.Table-container {
+  overflow-x: auto;
+}
+
+.Table-table {
+  border-spacing: 0;
+  border-collapse: collapse;
+  overflow: hidden;
+  width: 100%;
+}

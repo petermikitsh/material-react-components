@@ -1,0 +1,109 @@
+/*  imported from Switch.css  */
+
+.Switch-root {
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.Switch-disabled {
+  cursor: not-allowed;
+}
+
+.Switch-switchWrapper {
+  height: 64px;
+  width: 64px;
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.Switch-input {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border: 0;
+  background: transparent;
+  -webkit-appearance: none;
+  outline: none;
+  margin: 0;
+  z-index: 10;
+  clip: rect(1px, 1px, 1px, 1px);
+}
+
+.Switch-input:disabled {
+  cursor: not-allowed;
+}
+
+.Switch-track {
+  border-radius: 7px;
+  width: 34px;
+  height: 14px;
+  background-color: #000;
+  opacity: 0.5;
+  margin: auto;
+  position: relative;
+}
+
+.Switch-thumb {
+  width: 20px;
+  height: 20px;
+  -webkit-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 2px 1px -1px rgba(0, 0, 0, 0.12);
+          box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 2px 1px -1px rgba(0, 0, 0, 0.12);
+  border-radius: 50%;
+  background-color: #fff;
+  position: absolute;
+  top: 22px;
+  left: 10px;
+  -webkit-transition: all 250ms cubic-bezier(.23,1,.32,1);
+  -o-transition: all 250ms cubic-bezier(.23,1,.32,1);
+  transition: all 250ms cubic-bezier(.23,1,.32,1);
+}
+
+.Switch-input:checked ~ .Switch-thumb {
+  background-color: #2196f3;
+  -webkit-transform: translate(25px, 0);
+      -ms-transform: translate(25px, 0);
+          transform: translate(25px, 0);
+}
+
+.Switch-input:checked ~ .Switch-track {
+  background-color: #2196f3;
+}
+
+.Switch-input:disabled ~ .Switch-thumb,
+.Switch-input:disabled ~ .Switch-track {
+  background-color: #bdbdbd;
+}
+
+.Switch-input:focus ~ .Switch-thumb.Switch-thumbKeyboardFocus::before {
+  background-color: #000;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  opacity: 0.15;
+  -webkit-transform: scale(2);
+      -ms-transform: scale(2);
+          transform: scale(2);
+  content: ' ';
+}
+
+.Switch-input:not(:checked) ~ .Switch-thumb {
+  background-color: white;
+}
+
+.Switch-label {
+  line-height: 64px;
+  pointer-events: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+

@@ -1,0 +1,17 @@
+/*  imported from Ripple.css  */
+
+.Ripple-root {
+  border-radius: inherit;
+  display: block;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  pointer-events: none;
+  position: absolute;
+  overflow: hidden;
+  -webkit-transition: all 250ms;
+  -o-transition: all 250ms;
+  transition: all 250ms;
+  z-index: 0;
+}

@@ -1,0 +1,13 @@
+/*  imported from Scrollable.css  */
+
+.Scrollable-root::-webkit-scrollbar {
+  height: 4px;
+  width: 4px;
+}
+
+.Scrollable-root::-webkit-scrollbar-thumb {
+  border-radius: 0;
+  background-color: #dcdcdc;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}

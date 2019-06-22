@@ -1,0 +1,168 @@
+/*  imported from TextField.css  */
+
+.TextField-root {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+}
+
+.TextField-input {
+  background-color: transparent;
+  border: 0;
+  outline: 0;
+  margin-top: 32px;
+  display: block;
+  width: 100%;
+  padding: 8px 0;
+  font-size: 16px;
+  font-family: inherit;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.TextField-input:disabled {
+  cursor: not-allowed;
+}
+
+.TextField-input::-webkit-input-placeholder {
+  color: rgba(0, 0, 0, 0.42);
+}
+
+.TextField-input:-ms-input-placeholder {
+  color: rgba(0, 0, 0, 0.42);
+}
+
+.TextField-input::-ms-input-placeholder {
+  color: rgba(0, 0, 0, 0.42);
+}
+
+.TextField-input::placeholder {
+  color: rgba(0, 0, 0, 0.42);
+}
+
+.TextField-inkbar {
+  border-bottom-width: 1px;
+  border-bottom-color: rgba(0, 0, 0, 0.42);
+  border-bottom-style: solid;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: 2px;
+  -webkit-animation-duration: 250ms;
+          animation-duration: 250ms;
+  -webkit-animation-timing-function: easeOutFunction;
+          animation-timing-function: easeOutFunction;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.TextField-input:disabled ~ .TextField-inkbar {
+  border-bottom-style: dashed;
+}
+
+.TextField-input:focus ~ .TextField-inkbar {
+  -webkit-animation-name: TextField-stretch;
+          animation-name: TextField-stretch;
+  border-bottom-color: #2196f3;
+  max-width: 70%;
+}
+
+.TextField-input:focus ~ .TextField-inkbar,
+.TextField-input:hover:not(:disabled) ~ .TextField-inkbar {
+  border-bottom-width: 2px;
+}
+
+@-webkit-keyframes TextField-stretch {
+  0% {
+    margin-left: 15%;
+    max-width: 70%;
+  }
+
+  100% {
+    max-width: 100%;
+    margin-left: 0%;
+  }
+}
+
+@keyframes TextField-stretch {
+  0% {
+    margin-left: 15%;
+    max-width: 70%;
+  }
+
+  100% {
+    max-width: 100%;
+    margin-left: 0%;
+  }
+}
+
+.TextField-label {
+  color: rgba(0, 0, 0, 0.54);
+  position: absolute;
+  top: 40px;
+  pointer-events: none;
+  -webkit-animation-duration: 250ms;
+          animation-duration: 250ms;
+  -webkit-animation-timing-function: cubic-bezier(.23,1,.32,1);
+          animation-timing-function: cubic-bezier(.23,1,.32,1);
+  font-size: 16px;
+  -webkit-transform-origin: left top 0;
+      -ms-transform-origin: left top 0;
+          transform-origin: left top 0;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.TextField-input.TextField-hasPlaceholder + .TextField-label,
+.TextField-input.TextField-hasValue + .TextField-label,
+.TextField-input:focus + .TextField-label {
+  -webkit-transform: scale(.75) translate(0,-25px);
+      -ms-transform: scale(.75) translate(0,-25px);
+          transform: scale(.75) translate(0,-25px);
+}
+
+.TextField-input:focus + .TextField-label {
+  color: #2196f3;
+}
+
+.TextField-helper {
+  padding-top: 8px;
+  font-size: 12px;
+  line-height: 12px;
+  color: rgba(0, 0, 0, 0.54);
+}
+
+.TextField-shadow {
+  height: auto;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  visibility: hidden;
+  pointer-events: none;
+  margin-top: 40px;
+  margin-bottom: -40px;
+  position: absolute;
+  resize: none;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: 20px;
+  width: 100%;
+}
+
+.TextField-textarea {
+  height: auto;
+  resize: none;
+  overflow-y: hidden;
+  -webkit-transition: all 0.3s cubic-bezier(.23,1,.32,1);
+  -o-transition: all 0.3s cubic-bezier(.23,1,.32,1);
+  transition: all 0.3s cubic-bezier(.23,1,.32,1);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  margin-top: 40px;
+  position: relative;
+  margin-bottom: -20px;
+  line-height: 20px;
+}

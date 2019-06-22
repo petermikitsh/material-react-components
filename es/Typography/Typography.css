@@ -1,0 +1,90 @@
+/*  imported from Typography.css 
+ */
+
+/* The Material spec describes tracking/kerning in units of thousandths of an em.
+ *
+ * For more information on converting tracking/kerning to letter-spacing, see:
+ * https://stackoverflow.com/questions/2760784/how-to-calculate-css-letter-spacing-v-s-tracking-in-typography
+ */
+
+.Typography-display4 {
+  font-size: 112px;
+  font-weight: 300;
+  color: rgba(0,0,0,.54);
+  letter-spacing: -0.01em;
+}
+
+.Typography-display3 {
+  font-size: 56px;
+  font-weight: 400;
+  line-height: 1.35;
+  color: rgba(0,0,0,.54);
+  letter-spacing: -0.005em;
+}
+
+.Typography-display2 {
+  font-size: 45px;
+  font-weight: 400;
+  line-height: 48px;
+  color: rgba(0,0,0,.54);
+}
+
+.Typography-display1 {
+  font-size: 34px;
+  font-weight: 400;
+  line-height: 40px;
+  color: rgba(0,0,0,.54);
+}
+
+.Typography-headline {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 32px;
+  color: rgba(0,0,0,.87);
+}
+
+.Typography-title {
+  font-size: 21px;
+  font-weight: 500;
+  color: rgba(0,0,0,.87);
+  letter-spacing: 0.005em;
+}
+
+.Typography-subheading {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: rgba(0,0,0,.87);
+  letter-spacing: 0.01em;
+}
+
+.Typography-body2 {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 24px;
+  color: rgba(0,0,0,.87);
+  letter-spacing: 0.01em;
+}
+
+.Typography-body1 {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  color: rgba(0,0,0,.87);
+  letter-spacing: 0.01em;
+}
+
+.Typography-caption {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1;
+  color: rgba(0,0,0,.54);
+  letter-spacing: 0.02em;
+}
+
+.Typography-button {
+  text-transform: uppercase;
+  font-weight: 500;
+  color: rgba(0,0,0,.87);
+  letter-spacing: 0.01em;
+}
